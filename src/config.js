@@ -1,10 +1,3 @@
-// Migrate built-in rules to @stylistic/js namespace
-/* eslint @stylistic/migrate/migrate-js: "error" */
-
-// Migrate `@typescript-eslint` rules to @stylistic/ts namespace
-/* eslint @stylistic/migrate/migrate-ts: "error" */
-
-
 module.exports = function getConfig({
 	recommended = [],
 	plugins = [],
