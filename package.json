@@ -24,7 +24,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-resourge-custom-react": "file:lib/eslint-plugin-resourge-custom-react",
     "eslint-plugin-testing-library": "^6.0.2",
-    "eslint-plugin-typescript-sort-keys": "^3.0.0"
+    "eslint-plugin-typescript-sort-keys": "^3.0.0",
+    "eslint-plugin-unicorn": "^50.0.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
