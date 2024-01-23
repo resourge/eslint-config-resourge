@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/resourge/eslint-config-resourge/compare/v1.0.0...v1.0.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* **package:** install eslint-plugin-unicorn ([95b1975](https://github.com/resourge/eslint-config-resourge/commit/95b19750d9fecfa5a049f7a3966f1cead8b321f1))
+
 # 1.0.0 (2024-01-23)
 
 
