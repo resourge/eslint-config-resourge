@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/resourge/eslint-config-resourge/compare/v1.0.1...v1.0.2) (2024-01-23)
+
+
+### Bug Fixes
+
+* **react.js:** add react-hooks to plugins ([1992911](https://github.com/resourge/eslint-config-resourge/commit/19929112196e32611b4cc7e987eb5ba39fadab0b))
+
 ## [1.0.1](https://github.com/resourge/eslint-config-resourge/compare/v1.0.0...v1.0.1) (2024-01-23)
 
 
