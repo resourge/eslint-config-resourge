@@ -1,3 +1,16 @@
+# 1.0.0 (2024-01-23)
+
+
+### Bug Fixes
+
+* **package json:** fix reposity url ([d28806b](https://github.com/resourge/eslint-config-resourge/commit/d28806bdeb179fbf4301a19b95481a2124013608))
+
+
+### Features
+
+* **project:** first Commit ([9dc3cd4](https://github.com/resourge/eslint-config-resourge/commit/9dc3cd4a11f94854f8a000db1b6018d323964f3d))
+* **project:** first version ([2e3a200](https://github.com/resourge/eslint-config-resourge/commit/2e3a20051a76c2dd54710c71174969f6ef1683cd))
+
 # [1.4.0](https://github.com/resourge/eslint-config-resourge-typescript/compare/v1.3.0...v1.4.0) (2024-01-15)
 
 
