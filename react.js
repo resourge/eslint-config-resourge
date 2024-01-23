@@ -8,7 +8,8 @@ module.exports = getConfig({
 	],
 	plugins: [
 		'react',
-		'resourge-custom-react'
+		'resourge-custom-react',
+		'react-hooks'
 	],
 	overrides: [
 		{
