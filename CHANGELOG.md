@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/resourge/eslint-config-resourge/compare/v1.0.2...v1.0.3) (2024-01-24)
+
+
+### Bug Fixes
+
+* **package:** remove unused package ([0f83259](https://github.com/resourge/eslint-config-resourge/commit/0f832590fd77ab8b71d891bc7ae8dde26fe00901))
+
 ## [1.0.2](https://github.com/resourge/eslint-config-resourge/compare/v1.0.1...v1.0.2) (2024-01-23)
 
 
