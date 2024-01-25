@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/resourge/eslint-config-resourge/compare/v1.0.3...v1.1.0) (2024-01-25)
+
+
+### Features
+
+* **package:** update versions ([a7c6c27](https://github.com/resourge/eslint-config-resourge/commit/a7c6c2755c0f0dbdbda12ceff79a185cca600d2a))
+
 ## [1.0.3](https://github.com/resourge/eslint-config-resourge/compare/v1.0.2...v1.0.3) (2024-01-24)
 
 
