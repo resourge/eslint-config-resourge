@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/resourge/eslint-config-resourge/compare/v1.1.1...v1.1.2) (2024-02-06)
+
+
+### Bug Fixes
+
+* **package.json:** add src to files ([dd2addb](https://github.com/resourge/eslint-config-resourge/commit/dd2addb2b9ff05af02ea7a94f20f2f460837e303))
+
 ## [1.1.1](https://github.com/resourge/eslint-config-resourge/compare/v1.1.0...v1.1.1) (2024-02-06)
 
 
