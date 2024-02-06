@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/resourge/eslint-config-resourge/compare/v1.1.0...v1.1.1) (2024-02-06)
+
+
+### Bug Fixes
+
+* **react:** remoove unused plugin ([e613058](https://github.com/resourge/eslint-config-resourge/commit/e613058e643242d65a5f56ef26d01e3f1fdbb3ee))
+
 # [1.1.0](https://github.com/resourge/eslint-config-resourge/compare/v1.0.3...v1.1.0) (2024-01-25)
 
 
