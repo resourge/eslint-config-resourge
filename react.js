@@ -2,7 +2,6 @@ const getConfig = require('./src/config');
 
 module.exports = getConfig({
 	extends: [
-		'eslint-config-resourge-typescript',
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
 	],
