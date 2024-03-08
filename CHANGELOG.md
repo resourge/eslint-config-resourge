@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/resourge/eslint-config-resourge/compare/v1.1.3...v1.2.0) (2024-03-08)
+
+
+### Features
+
+* **eslint:** new versions and rules ([6ecb4f7](https://github.com/resourge/eslint-config-resourge/commit/6ecb4f73370efa5f388b72d8739b4ddc84da86d4))
+
 ## [1.1.3](https://github.com/resourge/eslint-config-resourge/compare/v1.1.2...v1.1.3) (2024-02-06)
 
 
