@@ -1,4 +1,5 @@
 const getConfig = require('./src/config');
+const eslintPluginExample = require("./lib/eslint-plugin-resourge-custom-react/index");
 
 module.exports = getConfig({
 	extends: [
@@ -7,7 +8,7 @@ module.exports = getConfig({
 	],
 	plugins: [
 		'react',
-		'resourge-custom-react',
+		eslintPluginExample,
 		'react-hooks'
 	],
 	overrides: [

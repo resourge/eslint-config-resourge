@@ -14,8 +14,8 @@ module.exports = function getConfig({
 		extends: [
 			'standard-with-typescript',
 			'plugin:jsx-a11y/recommended',
+			...recommended,
 			'plugin:@stylistic/recommended-extends',
-			...recommended
 		],
 		ignorePatterns: ['**/dist/*', '**/build/*', './main.js'],
 		parser: '@typescript-eslint/parser',
@@ -52,6 +52,7 @@ module.exports = function getConfig({
 			...overrides
 		],
 		rules: {
+			'@stylistic/arrow-parens': ['error', 'always'],
 			'@typescript-eslint/consistent-type-assertions': 0,
 			'no-return-assign': 'off',
 			'operator-linebreak': 'off',
@@ -125,7 +126,8 @@ module.exports = function getConfig({
 				types: 'always',
 				lib: 'never'
 			}],
-			'@stylistic/jsx-indent': ['error', 'tab'],
+			// It conflicts with indent
+			'@stylistic/jsx-indent': 0,
 			'@stylistic/jsx-indent-props': ['error', 'tab'],
 			indent: 0,
 			'@typescript-eslint/indent': 0,
