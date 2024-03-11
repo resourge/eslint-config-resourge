@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/resourge/eslint-config-resourge/compare/v1.2.3...v1.2.4) (2024-03-11)
+
+
+### Bug Fixes
+
+* **folder-file-convention:** change from filename to basename for single letter components ([ad0ae77](https://github.com/resourge/eslint-config-resourge/commit/ad0ae771acd1183da73b6ba2bcf54f80391f5f59))
+
 ## [1.2.3](https://github.com/resourge/eslint-config-resourge/compare/v1.2.2...v1.2.3) (2024-03-11)
 
 
