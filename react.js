@@ -2,13 +2,13 @@ const getConfig = require('./src/config');
 const eslintPluginExample = require("./lib/eslint-plugin-resourge-custom-react/index");
 
 module.exports = getConfig({
-	extends: [
+	recommended: [
 		'plugin:react/recommended',
 		'plugin:react-hooks/recommended',
 	],
 	plugins: [
 		'react',
-		eslintPluginExample,
+		'resourge-custom-react',
 		'react-hooks'
 	],
 	overrides: [
