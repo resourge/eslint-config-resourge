@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/resourge/eslint-config-resourge/compare/v1.2.0...v1.2.1) (2024-03-11)
+
+
+### Bug Fixes
+
+* **react:** fix custom rules ([c09a43b](https://github.com/resourge/eslint-config-resourge/commit/c09a43bd6a968add1df9ba2fba21697319cfa004))
+
 # [1.2.0](https://github.com/resourge/eslint-config-resourge/compare/v1.1.3...v1.2.0) (2024-03-08)
 
 
