@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/resourge/eslint-config-resourge/compare/v1.3.0...v1.3.1) (2024-04-05)
+
+
+### Bug Fixes
+
+* **config:** add unbound-method ([dfb1844](https://github.com/resourge/eslint-config-resourge/commit/dfb18447737d6b9423401503fd6463fdca1b70b8))
+
 # [1.3.0](https://github.com/resourge/eslint-config-resourge/compare/v1.2.4...v1.3.0) (2024-04-05)
 
 
