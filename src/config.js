@@ -214,6 +214,7 @@ module.exports = function getConfig({
 			"@typescript-eslint/prefer-nullish-coalescing": ["error", {
 				ignoreConditionalTests: true
 			}],
+			"@typescript-eslint/unbound-method": 0,
 			...rules
 		},
 		settings: {
