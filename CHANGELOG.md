@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/resourge/eslint-config-resourge/compare/v1.2.4...v1.3.0) (2024-04-05)
+
+
+### Features
+
+* **react-native:** add config for react-native and update some rules ([ef0fa1d](https://github.com/resourge/eslint-config-resourge/commit/ef0fa1dd0545e6cbd05bb1724cf4d078b50e66d5))
+
 ## [1.2.4](https://github.com/resourge/eslint-config-resourge/compare/v1.2.3...v1.2.4) (2024-03-11)
 
 
