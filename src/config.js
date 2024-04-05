@@ -211,6 +211,9 @@ module.exports = function getConfig({
 			'unicorn/prefer-array-find': ['error'],
 			'unicorn/prefer-array-some': ['error'],
 			'unicorn/no-invalid-remove-event-listener': ['error'],
+			"@typescript-eslint/prefer-nullish-coalescing": ["error", {
+				ignoreConditionalTests: true
+			}],
 			...rules
 		},
 		settings: {

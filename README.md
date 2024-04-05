@@ -19,3 +19,11 @@ module.exports = {
 	extends: ['resourge/react']
 };
 ```
+
+### React-native
+
+```javascript
+module.exports = {
+	extends: ['resourge/react-native']
+};
+```

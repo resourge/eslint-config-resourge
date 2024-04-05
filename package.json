@@ -11,11 +11,13 @@
 		"./lib",
 		"./src",
 		"./index.js",
-		"./react.js"
+		"./react.js",
+		"./react-native.js"
 	],
 	"author": "José Silva Oliveira",
 	"license": "ISC",
 	"dependencies": {
+		"@react-native/eslint-config": "^0.75.0-main",
 		"@stylistic/eslint-plugin": "^1.6.3",
 		"@typescript-eslint/eslint-plugin": "^6.21.0",
 		"eslint": "^8.57.0",
