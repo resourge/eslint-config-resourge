@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/resourge/eslint-config-resourge/compare/v1.4.0...v1.4.1) (2024-07-08)
+
+
+### Bug Fixes
+
+* **package.json:** missing dependency ([85e20c1](https://github.com/resourge/eslint-config-resourge/commit/85e20c17c157d147774f15948eb01ab6ca240698))
+
 # [1.4.0](https://github.com/resourge/eslint-config-resourge/compare/v1.3.1...v1.4.0) (2024-07-08)
 
 
