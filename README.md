@@ -8,7 +8,7 @@ Create file .eslintrc.cjs
 
 ```javascript
 module.exports = {
-	extends: ['resourge']
+  extends: ['resourge']
 };
 ```
 
@@ -16,7 +16,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	extends: ['resourge/react']
+  extends: ['resourge/react']
 };
 ```
 
@@ -24,6 +24,6 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	extends: ['resourge/react-native']
+  extends: ['resourge/react-native']
 };
 ```
