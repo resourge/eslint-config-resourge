@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/resourge/eslint-config-resourge/compare/v1.4.1...v1.4.2) (2024-07-08)
+
+
+### Bug Fixes
+
+* **eslint-plugin-resourge-custom-react:** add package.json back ([8e61986](https://github.com/resourge/eslint-config-resourge/commit/8e6198642c413f48c89d0f41ff2d132f4a58288b))
+
 ## [1.4.1](https://github.com/resourge/eslint-config-resourge/compare/v1.4.0...v1.4.1) (2024-07-08)
 
 
