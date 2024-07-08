@@ -18,28 +18,28 @@
 	"license": "ISC",
 	"dependencies": {
 		"@react-native/eslint-config": "^0.75.0-main",
-		"@stylistic/eslint-plugin": "^1.6.3",
-		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@stylistic/eslint-plugin": "^2.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.15.0",
 		"eslint": "^8.57.0",
-		"eslint-config-standard-with-typescript": "^43.0.1",
-		"eslint-plugin-import": "^2.28.1",
+		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-import-newlines": "^1.4.0",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
-		"eslint-plugin-n": "^16.1.0",
-		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-n": "^17.9.0",
+		"eslint-plugin-promise": "^6.4.0",
 		"eslint-plugin-react": "^7.34.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-resourge-custom-react": "file:lib/eslint-plugin-resourge-custom-react",
+		"eslint-plugin-resourge-custom-react": "file:eslint-plugin-resourge-custom-react",
 		"eslint-plugin-testing-library": "^6.0.2",
 		"eslint-plugin-typescript-sort-keys": "^3.2.0",
-		"eslint-plugin-unicorn": "^51.0.1"
+		"eslint-plugin-unicorn": "^54.0.0",
+		"typescript-eslint": "^7.15.0"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/exec": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"cz-conventional-changelog": "^3.3.0",
-		"semantic-release": "^23.0.0"
+		"semantic-release": "^24.0.0"
 	},
 	"repository": {
 		"type": "git",

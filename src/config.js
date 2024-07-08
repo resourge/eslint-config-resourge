@@ -1,3 +1,5 @@
+const { PLUGINS, RULES } = require('./love');
+
 module.exports = function getConfig({
 	recommended = [],
 	plugins = [],
@@ -12,7 +14,6 @@ module.exports = function getConfig({
 			es2021: true
 		},
 		extends: [
-			'standard-with-typescript',
 			'plugin:jsx-a11y/recommended',
 			...recommended,
 			'plugin:@stylistic/recommended-extends',
@@ -28,6 +29,7 @@ module.exports = function getConfig({
 			sourceType: 'module'
 		},
 		plugins: [
+			...PLUGINS,
 			'@typescript-eslint',
 			'typescript-sort-keys',
 			'import-newlines',
@@ -40,7 +42,7 @@ module.exports = function getConfig({
 			{
 				files: ['*.ts', '*.tsx', '*.js'], // Your TypeScript files extension
 				parserOptions: {
-					project: ['./tsconfig.json'] // Specify it only for TypeScript files
+					project: ['./tsconfig.json', './tsconfig.app.json'] // Specify it only for TypeScript files
 				}
 			},
 			{
@@ -52,6 +54,7 @@ module.exports = function getConfig({
 			...overrides
 		],
 		rules: {
+			...RULES,
 			'@stylistic/arrow-parens': ['error', 'always'],
 			'@typescript-eslint/consistent-type-assertions': 0,
 			'no-return-assign': 'off',

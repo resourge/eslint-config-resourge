@@ -1,6 +1,6 @@
 const docsUrl = require('../util/docsUrl.js');
 const { getBasename, getFilePath, getFilename, getAllFolders } = require('../util/filename.js');
-const report = require("../util/report");
+const report = require("../util/report.js");
 
 const messages = {
 	noIndex: 'The filename "index" is not allowed',
