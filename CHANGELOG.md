@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/resourge/eslint-config-resourge/compare/v1.3.1...v1.4.0) (2024-07-08)
+
+
+### Features
+
+* **package:** update package rules versions ([53b39e4](https://github.com/resourge/eslint-config-resourge/commit/53b39e4416f4c4ed0abeed23a5839b1c88362fab))
+* **release.yml revert:** release.yml revert ([dd707bf](https://github.com/resourge/eslint-config-resourge/commit/dd707bf4f644ab9d28572de61cc3d4b57a750fb1))
+* **release.yml:** fix release ([4b7d0ff](https://github.com/resourge/eslint-config-resourge/commit/4b7d0ffa6e700212723aedd30d40d54133e12515))
+
 ## [1.3.1](https://github.com/resourge/eslint-config-resourge/compare/v1.3.0...v1.3.1) (2024-04-05)
 
 
