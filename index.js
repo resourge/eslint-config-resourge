@@ -1,3 +1,5 @@
-const getConfig = require('./src/config');
+import config from './src/config.js';
 
-module.exports = getConfig({});
+export default defineConfig([
+	config
+]);

@@ -1,12 +1,15 @@
-const getReactConfig = require('./src/reactConfig');
+import config from './src/config.js';
 
-module.exports = getReactConfig({
-	recommended: [
-		'@react-native'
-	],
-	rules: {
-		'prettier/prettier': 0,
-		'react-native/no-inline-styles': 0,
-		'@typescript-eslint/no-shadow': 0
+export default defineConfig([
+	config,
+	{
+		extends: [
+			'@react-native'
+		],
+		rules: {
+			'prettier/prettier': 0,
+			'react-native/no-inline-styles': 0,
+			'@typescript-eslint/no-shadow': 0
+		}
 	}
-});
+]);

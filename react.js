@@ -1,3 +1,5 @@
-const getReactConfig = require('./src/reactConfig');
+import config from './src/config.js';
 
-module.exports = getReactConfig({});
+export default defineConfig([
+	config
+]);
