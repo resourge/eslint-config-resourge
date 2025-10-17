@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/resourge/eslint-config-resourge/compare/v1.5.0...v1.5.1) (2025-10-17)
+
+
+### Bug Fixes
+
+* **package:** missing package and removal of some rules ([d0be974](https://github.com/resourge/eslint-config-resourge/commit/d0be974165a8b0ba860b8eff0c582c7e47aced5f))
+
 # [1.5.0](https://github.com/resourge/eslint-config-resourge/compare/v1.4.3...v1.5.0) (2025-10-16)
 
 
