@@ -10,9 +10,10 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
- 
+import noSpreadInReduce from './src/eslint/no-spread-in-reduce.js';
+
 const isProduction = process.env.NODE_ENV === 'production';
-const ignoreList = ignoreList
+const ignoreList = ['dist', 'build', 'node_modules'];
 
 export default defineConfig([
 	globalIgnores(ignoreList),
@@ -30,58 +31,40 @@ export default defineConfig([
 		}
 	},
 	{
-		files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-		ignores: ignoreList,
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-		languageOptions: react.configs.flat['jsx-runtime'].languageOptions,
-		plugins: {
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-			react
-		},
-		rules: {
-			'react/jsx-no-leaked-render': ['error', {
-				validStrategies: ['ternary'] 
-			}],
-			'react/no-unstable-nested-components': 'off',
-			'react/prop-types': 'off'
-		}
-	},
-	{
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-		ignores: ignoreList,
 		extends: [
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			js.configs.recommended,
 			tseslint.configs.recommendedTypeChecked,
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			reactHooks.configs.flat['recommended-latest'],
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			reactRefresh.configs.vite,
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			perfectionist.configs['recommended-natural'],
 			stylistic.configs.recommended,
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 			jsxA11y.flatConfigs.recommended,
 			unicorn.configs.recommended
 		],
-		files: ['**/*.{ts,tsx}', 'eslint.config.js'],
+		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js'],
+		ignores: ignoreList,
 		languageOptions: {
 			ecmaVersion: 202,
 			globals: {
-				// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 				...globals.serviceworker,
-				// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 				...globals.browser
 			},
 			parserOptions: {
-				ecmaFeatures: {
-					jsx: true
-				},
+				...react.configs.flat['jsx-runtime'].languageOptions,
 				projectService: true
 			}
 		},
+		plugins: { 
+			custom: { 
+				rules: { 
+					'no-spread-in-reduce': noSpreadInReduce 
+				} 
+			},
+			react 
+		},
 		rules: {
 			'@stylistic/arrow-parens': ['error', 'always'],
+			'@stylistic/brace-style': ['error', 'stroustrup'],
 			'@stylistic/comma-dangle': ['error', 'never'],
 			'@stylistic/indent': ['error', 'tab', {
 				ignoredNodes: ['TSTypeParameterInstantiation'],
@@ -93,17 +76,17 @@ export default defineConfig([
 			'@stylistic/jsx-closing-tag-location': ['error', 'tag-aligned'],
 			'@stylistic/jsx-curly-brace-presence': ['error', {
 				children: 'never',
-				props: 'always' 
+				props: 'always'
 			}],
 			'@stylistic/jsx-curly-newline': ['error', {
-				multiline: 'require',
-				singleline: 'forbid' 
+				multiline: 'consistent',
+				singleline: 'forbid'
 			}],
 			'@stylistic/jsx-curly-spacing': ['error', {
 				children: {
-					when: 'always' 
+					when: 'always'
 				},
-				when: 'never' 
+				when: 'never'
 			}],
 			'@stylistic/jsx-indent': 0,
 			'@stylistic/jsx-indent-props': ['error', 'tab'],
@@ -112,7 +95,7 @@ export default defineConfig([
 				when: 'multiline'
 			}],
 			'@stylistic/jsx-one-expression-per-line': ['error', {
-				allow: 'non-jsx' 
+				allow: 'non-jsx'
 			}],
 			'@stylistic/jsx-self-closing-comp': ['error', {
 				component: true,
@@ -132,11 +115,7 @@ export default defineConfig([
 				propertyValue: 'parens-new-line',
 				return: 'parens-new-line'
 			}],
-			'@stylistic/max-len': ['error', {
-				code: 120,
-				comments: 120,
-				ignoreUrls: true 
-			}],
+			'@stylistic/max-statements-per-line': 'off',
 			'@stylistic/multiline-ternary': ['error', 'always', {
 				ignoreJSX: false
 			}],
@@ -185,6 +164,7 @@ export default defineConfig([
 			'@typescript-eslint/explicit-function-return-type': 'off',
 			'@typescript-eslint/member-ordering': 'error',
 			'@typescript-eslint/no-confusing-void-expression': 'off',
+			'@typescript-eslint/no-explicit-any': 'off',
 			'@typescript-eslint/no-extraneous-class': 'off',
 			'@typescript-eslint/no-floating-promises': 'off',
 			'@typescript-eslint/no-misused-promises': [
@@ -196,6 +176,12 @@ export default defineConfig([
 			],
 			'@typescript-eslint/no-namespace': 'off',
 			'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+			'@typescript-eslint/no-unsafe-argument': 'off',
+			'@typescript-eslint/no-unsafe-assignment': 'off',
+			'@typescript-eslint/no-unsafe-call': 'off',
+			'@typescript-eslint/no-unsafe-member-access': 'off',
+			'@typescript-eslint/no-unsafe-return': 'off',
+			'@typescript-eslint/no-unused-expressions': 'off',
 			'@typescript-eslint/no-unused-vars': isProduction
 				? 'error'
 				: 'warn',
@@ -213,7 +199,13 @@ export default defineConfig([
 			}],
 			'@typescript-eslint/unbound-method': 'off',
 
+			'curly': ['error', 'all'],
+			'custom/no-spread-in-reduce': 'error',
 			'key-spacing': 'off',
+			'max-params': ['error', {
+				countVoidThis: false,
+				max: 4 
+			}],
 			'no-await-in-loop': ['error'],
 			'no-case-declarations': 'off',
 			'no-console': isProduction
@@ -227,10 +219,15 @@ export default defineConfig([
 			'no-return-assign': 'off',
 			'operator-linebreak': 'off',
 			'prefer-promise-reject-errors': 'off',
+
 			'react-hooks/exhaustive-deps': 'off',
 
+			'react/jsx-no-leaked-render': ['error', {
+				validStrategies: ['ternary']
+			}],
+			'react/no-unstable-nested-components': 'off',
+			'react/prop-types': 'off',
 			'require-await': 'off',
-
 			'unicorn/filename-case': [
 				'error',
 				{
@@ -242,13 +239,21 @@ export default defineConfig([
 					]
 				}
 			],
+			'unicorn/no-array-for-each': 'off',
+			'unicorn/no-array-reduce': 'off',
+			'unicorn/no-array-reverse': 'off',
+			'unicorn/no-array-sort': 'off',
+			'unicorn/no-for-loop': 'off',
 			'unicorn/no-invalid-remove-event-listener': ['error'],
 			'unicorn/prefer-array-find': ['error'],
 
 			'unicorn/prefer-array-some': ['error'],
 			'unicorn/prefer-at': [
 				'error'
-			]
+			],
+			'unicorn/prefer-spread': 'off',
+
+			'unicorn/prevent-abbreviations': 'off'
 		}
 	}
 ]);

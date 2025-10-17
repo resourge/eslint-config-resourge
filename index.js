@@ -1,5 +1,3 @@
 import config from './src/config.js';
 
-export default defineConfig([
-	config
-]);
+export default config;
