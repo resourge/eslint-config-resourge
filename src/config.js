@@ -10,7 +10,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-import noSpreadInReduce from './src/eslint/no-spread-in-reduce.js';
+import noSpreadInReduce from './eslint/no-spread-in-reduce.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const ignoreList = ['dist', 'build', 'node_modules'];
