@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/resourge/eslint-config-resourge/compare/v1.4.3...v1.5.0) (2025-10-16)
+
+
+### Features
+
+* **@stylistic/object-property-newline:** remove @stylistic/object-property-newline ([e848059](https://github.com/resourge/eslint-config-resourge/commit/e848059a78ecb8dc43b5c93a1bd3db17819dd42e))
+* **eslint:** new eslint version ([8990bb7](https://github.com/resourge/eslint-config-resourge/commit/8990bb7ea12e2fb325470f042114621e01a2965e))
+
 ## [1.4.3](https://github.com/resourge/eslint-config-resourge/compare/v1.4.2...v1.4.3) (2024-07-08)
 
 
