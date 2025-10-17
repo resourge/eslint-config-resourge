@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/resourge/eslint-config-resourge/compare/v1.5.1...v1.5.2) (2025-10-17)
+
+
+### Bug Fixes
+
+* **config.js:** fix wrong import ([805e582](https://github.com/resourge/eslint-config-resourge/commit/805e5826769fff007cea8414dda83f1c80ad7b4c))
+
 ## [1.5.1](https://github.com/resourge/eslint-config-resourge/compare/v1.5.0...v1.5.1) (2025-10-17)
 
 
