@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/resourge/eslint-config-resourge/compare/v1.7.0...v1.7.1) (2026-04-17)
+
+
+### Bug Fixes
+
+* **imports:** fix imports and add eslint.config.ts to file check ([7b93062](https://github.com/resourge/eslint-config-resourge/commit/7b9306249a714e97ddeee3c58faeb5d727f0f9d5))
+
 # [1.7.0](https://github.com/resourge/eslint-config-resourge/compare/v1.6.0...v1.7.0) (2026-04-17)
 
 
