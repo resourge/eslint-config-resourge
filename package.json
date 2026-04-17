@@ -11,9 +11,9 @@
 	"files": [
 		"./lib",
 		"./src",
-		"./index.js",
-		"./react.js",
-		"./react-native.js"
+		"./index.ts",
+		"./react.ts",
+		"./react-native.ts"
 	],
 	"author": "José Silva Oliveira",
 	"license": "ISC",
@@ -27,12 +27,15 @@
 		"eslint-plugin-react-refresh": "^0.5.2",
 		"eslint-plugin-unicorn": "^64.0.0",
 		"globals": "^17.5.0",
+		"jiti": "^2.6.1",
 		"typescript-eslint": "^8.58.2"
 	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/exec": "^7.1.0",
 		"@semantic-release/git": "^10.0.1",
+		"@types/eslint-plugin-jsx-a11y": "^6.10.1",
+		"@types/node": "^25.6.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^9.39.4",
 		"semantic-release": "^25.0.3"

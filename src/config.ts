@@ -242,17 +242,6 @@ export default defineConfig([
 			'react/no-unstable-nested-components': 'off',
 			'react/prop-types': 'off',
 			'require-await': 'off',
-			'unicorn/filename-case': [
-				'error',
-				{
-					case: 'pascalCase',
-					ignore: [
-						'main.tsx',
-						'.ts$',
-						'eslint.config.js'
-					]
-				}
-			],
 			'unicorn/no-array-for-each': 'off',
 			'unicorn/no-array-reduce': 'off',
 			'unicorn/no-array-reverse': 'off',
@@ -266,8 +255,15 @@ export default defineConfig([
 				'error'
 			],
 			'unicorn/prefer-spread': 'off',
+			'unicorn/prevent-abbreviations': 'off',
+			"unicorn/empty-brace-spaces": "off",
+			"unicorn/filename-case": "off",
+			"unicorn/prefer-number-properties": "off",
+			"unicorn/no-nested-ternary": "off",
+			"unicorn/consistent-function-scoping": "off",
 
-			'unicorn/prevent-abbreviations': 'off'
+			'no-restricted-syntax': 'off',
+			'react-hooks/refs': 'off',
 		}
 	}
 ]);
