@@ -13,13 +13,12 @@ import tseslint from 'typescript-eslint';
 import noSpreadInReduce from './eslint/no-spread-in-reduce.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
-const ignoreList = ['dist', 'build', 'node_modules'];
+const ignoreList = ['dist', 'build', 'node_modules', 'test', 'tests'];
 
 export default defineConfig([
 	globalIgnores(ignoreList),
 	{
 		files: ['**/index.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-		ignores: ignoreList,
 		rules: {
 			'no-restricted-syntax': [
 				'error',
@@ -30,19 +29,23 @@ export default defineConfig([
 			]
 		}
 	},
+	js.configs.recommended,
+	tseslint.configs.recommendedTypeChecked,
 	{
-		extends: [
-			js.configs.recommended,
-			tseslint.configs.recommendedTypeChecked,
-			reactHooks.configs.flat['recommended-latest'],
-			reactRefresh.configs.vite,
-			perfectionist.configs['recommended-natural'],
-			stylistic.configs.recommended,
-			jsxA11y.flatConfigs.recommended,
-			unicorn.configs.recommended
-		],
-		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js'],
-		ignores: ignoreList,
+		languageOptions: {
+			parserOptions: {
+				projectService: true,
+			},
+		},
+	},
+	reactHooks.configs.flat['recommended-latest'],
+	reactRefresh.configs.vite,
+	perfectionist.configs['recommended-natural'],
+	stylistic.configs.recommended,
+	jsxA11y.flatConfigs.recommended,
+	unicorn.configs.recommended,
+	{
+		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js', 'tailwind.config.js'],
 		languageOptions: {
 			ecmaVersion: 202,
 			globals: {
@@ -63,6 +66,7 @@ export default defineConfig([
 			react 
 		},
 		rules: {
+			"@typescript-eslint/no-unsafe-enum-comparison": "off",
 			'@stylistic/arrow-parens': ['error', 'always'],
 			'@stylistic/brace-style': ['error', 'stroustrup'],
 			'@stylistic/comma-dangle': ['error', 'never'],
@@ -162,7 +166,17 @@ export default defineConfig([
 			'@typescript-eslint/ban-types': 'off',
 			'@typescript-eslint/consistent-type-assertions': 'off',
 			'@typescript-eslint/explicit-function-return-type': 'off',
-			'@typescript-eslint/member-ordering': 'error',
+			"@typescript-eslint/member-ordering": [
+				"error",
+				{ 
+					"default": [
+						"signature", 
+						"field", 
+						"constructor",
+						"method", 
+					] 
+				},
+			],
 			'@typescript-eslint/no-confusing-void-expression': 'off',
 			'@typescript-eslint/no-explicit-any': 'off',
 			'@typescript-eslint/no-extraneous-class': 'off',
