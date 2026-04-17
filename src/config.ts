@@ -10,25 +10,13 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-import noSpreadInReduce from './eslint/no-spread-in-reduce.js';
+import noSpreadInReduce from './eslint/no-spread-in-reduce';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const ignoreList = ['dist', 'build', 'node_modules', 'test', 'tests'];
 
 export default defineConfig([
 	globalIgnores(ignoreList),
-	{
-		files: ['**/index.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-		rules: {
-			'no-restricted-syntax': [
-				'error',
-				{
-					message: 'Avoid using index — use a descriptive filename instead.',
-					selector: 'Program'
-				}
-			]
-		}
-	},
 	js.configs.recommended,
 	tseslint.configs.recommendedTypeChecked,
 	{
@@ -45,7 +33,7 @@ export default defineConfig([
 	jsxA11y.flatConfigs.recommended,
 	unicorn.configs.recommended,
 	{
-		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js', 'tailwind.config.js'],
+		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js', 'eslint.config.ts', 'tailwind.config.js'],
 		languageOptions: {
 			ecmaVersion: 202,
 			globals: {

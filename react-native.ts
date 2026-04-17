@@ -1,4 +1,4 @@
-import config from './src/config.js';
+import config from './src/config';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
