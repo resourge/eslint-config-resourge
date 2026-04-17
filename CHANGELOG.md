@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/resourge/eslint-config-resourge/compare/v1.6.0...v1.7.0) (2026-04-17)
+
+
+### Features
+
+* **eslint:** add more rules ([0b0b424](https://github.com/resourge/eslint-config-resourge/commit/0b0b42499642685616046497d7d8fef185a8838b))
+
 # [1.6.0](https://github.com/resourge/eslint-config-resourge/compare/v1.5.2...v1.6.0) (2026-04-17)
 
 
