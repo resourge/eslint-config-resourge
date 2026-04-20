@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/resourge/eslint-config-resourge/compare/v1.7.1...v1.7.2) (2026-04-20)
+
+
+### Bug Fixes
+
+* **package:** add missing types and files ([9046bcf](https://github.com/resourge/eslint-config-resourge/commit/9046bcf3f89a07dd575c33d286c0fc3e314888b1))
+
 ## [1.7.1](https://github.com/resourge/eslint-config-resourge/compare/v1.7.0...v1.7.1) (2026-04-17)
 
 
