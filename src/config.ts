@@ -13,7 +13,7 @@ import tseslint from 'typescript-eslint';
 import noSpreadInReduce from './eslint/no-spread-in-reduce';
 
 const isProduction = process.env.NODE_ENV === 'production';
-const ignoreList = ['dist', 'build', 'node_modules', 'test', 'tests'];
+const ignoreList = ['dist', 'build', 'node_modules', 'test', 'tests', '**/examples/**/*'];
 
 export default defineConfig([
 	globalIgnores(ignoreList),

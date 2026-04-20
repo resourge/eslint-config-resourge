@@ -20,6 +20,7 @@
 		"noEmit": true,
 		"removeComments": false,
 		"baseUrl": ".",
+		"types": ["node"],
 		"paths": {
 			"src": [
 				"./src"
