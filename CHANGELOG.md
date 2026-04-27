@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/resourge/eslint-config-resourge/compare/v1.8.0...v1.8.1) (2026-04-27)
+
+
+### Bug Fixes
+
+* **package:** make @types/eslint-plugin-jsx-a11y a dependency ([63a5834](https://github.com/resourge/eslint-config-resourge/commit/63a5834042fb65c665d46da261462c7a8c3307e3))
+
 # [1.8.0](https://github.com/resourge/eslint-config-resourge/compare/v1.7.2...v1.8.0) (2026-04-27)
 
 
