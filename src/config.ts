@@ -33,7 +33,14 @@ export default defineConfig([
 	jsxA11y.flatConfigs.recommended,
 	unicorn.configs.recommended,
 	{
-		files: ['./src/**/*.{js,ts,tsx}', 'eslint.config.js', 'eslint.config.ts', 'tailwind.config.js'],
+		files: [
+			'./src/**/*.{js,ts,tsx}', 
+			'./config/**/*.{js,ts,tsx}',
+			'eslint.config.{js,ts}',
+			'vite.config.{js,ts}', 
+			'vitest.config.{js,ts}', 
+			'tailwind.config.{js,ts}'
+		],
 		languageOptions: {
 			ecmaVersion: 202,
 			globals: {
