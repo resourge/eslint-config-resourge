@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/resourge/eslint-config-resourge/compare/v1.8.1...v1.8.2) (2026-04-27)
+
+
+### Bug Fixes
+
+* **config:** add more files to eslint ([975a04b](https://github.com/resourge/eslint-config-resourge/commit/975a04b5cfaf0b095d504947158f2278619efdb5))
+
 ## [1.8.1](https://github.com/resourge/eslint-config-resourge/compare/v1.8.0...v1.8.1) (2026-04-27)
 
 
