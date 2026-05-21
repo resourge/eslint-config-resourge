@@ -115,9 +115,7 @@ export default defineConfig([
 				return: 'parens-new-line'
 			}],
 			'@stylistic/max-statements-per-line': 'off',
-			'@stylistic/multiline-ternary': ['error', 'always', {
-				ignoreJSX: false
-			}],
+			'@stylistic/multiline-ternary': 'off',
 			'@stylistic/newline-per-chained-call': ['error', {
 				ignoreChainWithDepth: 2
 			}],
@@ -263,6 +261,10 @@ export default defineConfig([
 			"unicorn/no-null": "off",
 
 			'no-restricted-syntax': 'off',
+			'react-hooks/immutability': 'off',
+			'react-hooks/preserve-manual-memoization': 'off',
+			'react-hooks/rules-of-hooks': 'off',
+			'react-hooks/set-state-in-effect': 'off',
 			'react-hooks/refs': 'off',
 
 			'perfectionist/sort-imports': [
@@ -307,12 +309,10 @@ export default defineConfig([
 						['interface', 'type'],
 						['declare-interface', 'declare-type'],
 						['export-interface', 'export-type'],
-						'declare-function',
+						['declare-function', 'function'],
 						'export-function',
-						'function',
-						'declare-class',
-						'export-class',
-						'class'
+						['declare-class', 'class'],
+						'export-class'
 					],
 					newlinesBetween: 1,
 					newlinesInside: 1,
@@ -320,7 +320,9 @@ export default defineConfig([
 					type: 'alphabetical'
 				}
 			],
-			'unicorn/no-thenable': 'off'
+			'unicorn/no-thenable': 'off',
+			'unicorn/no-useless-undefined': 'off',
+			'unicorn/prefer-structured-clone': 'off'
 		}
 	}
 ]);
