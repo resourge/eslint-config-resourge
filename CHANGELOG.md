@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/resourge/eslint-config-resourge/compare/v1.8.2...v1.9.0) (2026-05-21)
+
+
+### Features
+
+* **rules:** update and add rules ([7245479](https://github.com/resourge/eslint-config-resourge/commit/72454793d95aae72c76ef4ee3947a7b08d1c8b1c))
+
 ## [1.8.2](https://github.com/resourge/eslint-config-resourge/compare/v1.8.1...v1.8.2) (2026-04-27)
 
 
