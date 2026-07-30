@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"commit": "git pull && git add . && git-cz",
+		"commitizen": "git add . && git-cz",
+		"commit": "git pull && npm run commitizen",
 		"semantic-release": "semantic-release"
 	},
 	"files": [
@@ -18,28 +19,28 @@
 	"author": "José Silva Oliveira",
 	"license": "ISC",
 	"dependencies": {
-		"@eslint/js": "^9.38.0",
+		"@eslint/js": "^10.0.1",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/eslint-plugin-jsx-a11y": "^6.10.1",
-		"eslint": "^9.39.4",
-		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"eslint-plugin-perfectionist": "^5.9.0",
-		"eslint-plugin-react": "^7.37.5",
+		"eslint": "^10.8.0",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-perfectionist": "^5.10.0",
+		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^7.1.1",
-		"eslint-plugin-react-refresh": "^0.5.2",
-		"eslint-plugin-unicorn": "^64.0.0",
-		"globals": "^17.5.0",
-		"jiti": "^2.6.1",
-		"typescript-eslint": "^8.59.0"
+		"eslint-plugin-react-refresh": "^0.5.3",
+		"eslint-plugin-unicorn": "^72.0.0",
+		"globals": "^17.8.0",
+		"jiti": "^2.7.0",
+		"typescript-eslint": "^8.65.0"
 	},
 	"devDependencies": {
-		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/changelog": "^7.0.0",
 		"@semantic-release/exec": "^7.1.0",
-		"@semantic-release/git": "^10.0.1",
-		"@types/node": "^25.6.0",
-		"cz-conventional-changelog": "^3.3.0",
-		"semantic-release": "^25.0.3",
-		"typescript": "^5.9.3"
+		"@semantic-release/git": "^11.0.1",
+		"@types/node": "^26.1.2",
+		"cz-conventional-changelog": "^3.0.1",
+		"semantic-release": "^25.0.8",
+		"typescript": "^7.0.2"
 	},
 	"repository": {
 		"type": "git",
@@ -49,5 +50,9 @@
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"overrides": {
+		"eslint": "^10.8.0",
+		"typescript": "^7.0.2"
 	}
 }

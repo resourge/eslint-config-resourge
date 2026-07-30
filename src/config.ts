@@ -52,6 +52,11 @@ export default defineConfig([
 				projectService: true
 			}
 		},
+		settings: {
+			react: {
+				version: 'detect'
+			}
+		},
 		plugins: { 
 			custom: { 
 				rules: { 
@@ -259,6 +264,8 @@ export default defineConfig([
 			"unicorn/no-nested-ternary": "off",
 			"unicorn/consistent-function-scoping": "off",
 			"unicorn/no-null": "off",
+			"unicorn/no-useless-recursion": "off",
+			"name-replacements": "off",
 
 			'no-restricted-syntax': 'off',
 			'react-hooks/immutability': 'off',
@@ -320,9 +327,31 @@ export default defineConfig([
 					type: 'alphabetical'
 				}
 			],
+			'unicorn/name-replacements': 'off',
 			'unicorn/no-thenable': 'off',
 			'unicorn/no-useless-undefined': 'off',
-			'unicorn/prefer-structured-clone': 'off'
+			'unicorn/prefer-structured-clone': 'off',
+			'unicorn/max-nested-calls': 'off',
+			'unicorn/no-top-level-assignment-in-function': 'off',
+			// One day when this rule takes in consideration getters and setters
+			'unicorn/consistent-class-member-order': 'off',
+			'unicorn/no-for-each': 'off',
+			'unicorn/consistent-boolean-name': 'off',
+			'unicorn/prefer-simple-condition-first': 'off',
+			'unicorn/no-computed-property-existence-check': 'off',
+			'unicorn/default-export-style': [
+				"error", 
+				{
+					functions: "ignore",
+					classes: "inline"
+				}
+			],
+			'unicorn/no-non-function-verb-prefix': 'off',
+			'unicorn/prefer-unicode-code-point-escapes': 'off',
+			'unicorn/no-break-in-nested-loop': 'off',
+			'unicorn/no-this-outside-of-class': 'off',
+			'unicorn/no-unsafe-string-replacement': 'off'
+			// 'unicorn/consistent-boolean-name'
 		}
 	}
 ]);
