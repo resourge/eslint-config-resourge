@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/resourge/eslint-config-resourge/compare/v1.9.0...v1.9.1) (2026-07-30)
+
+
+### Bug Fixes
+
+* **package:** fix packages version and tsconfig ([eb6cd46](https://github.com/resourge/eslint-config-resourge/commit/eb6cd46f55e05b045ecb199917f833763f413b23))
+
 # [1.9.0](https://github.com/resourge/eslint-config-resourge/compare/v1.8.2...v1.9.0) (2026-05-21)
 
 
