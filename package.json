@@ -1,10 +1,10 @@
 {
 	"name": "eslint-config-resourge",
-	"version": "1.9.1",
+	"version": "1.9.2",
 	"description": "",
 	"main": "index.js",
 	"type": "module",
-  	"packageManager": "pnpm@12.16.1",
+	"packageManager": "pnpm@12.16.1",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
 		"commitizen": "git add . && git-cz",

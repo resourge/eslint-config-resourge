@@ -1,3 +1,16 @@
+## [1.9.2](https://github.com/resourge/eslint-config-resourge/compare/v1.9.1...v1.9.2) (2026-10-29)
+
+
+### Bug Fixes
+
+* 🐛 add pnpm to package.json ([9106e73](https://github.com/resourge/eslint-config-resourge/commit/9106e73a369e5d0a3cd553b10e9cf75b20eaaaae))
+* 🐛 pnpm missing version ([0376966](https://github.com/resourge/eslint-config-resourge/commit/0376966ba89a7aeffeb906f3b2325e8345dc988a))
+* 🐛 release.yml ([334691c](https://github.com/resourge/eslint-config-resourge/commit/334691c6fea03d2b07268a860b4af1eb164233e8))
+* 🐛 release.yml ([6b265bf](https://github.com/resourge/eslint-config-resourge/commit/6b265bfb7919beca2fc1da32d3fe06668575be8d))
+* 🐛 release.yml ([5d3d8a1](https://github.com/resourge/eslint-config-resourge/commit/5d3d8a1a68a8bbbe24bfdceb3d4afd988950fabf))
+* 🐛 release.yml add missing pnpm version ([f745912](https://github.com/resourge/eslint-config-resourge/commit/f745912322bfeb6517475155c45f07ce8b6927ac))
+* 🐛 release.yml file ([7b6dfa3](https://github.com/resourge/eslint-config-resourge/commit/7b6dfa31d5d791573e174cd3b5d092d9a20f0eda))
+
 ## [1.9.1](https://github.com/resourge/eslint-config-resourge/compare/v1.9.0...v1.9.1) (2026-07-30)
 
 
