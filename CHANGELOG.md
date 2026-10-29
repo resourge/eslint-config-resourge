@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/resourge/eslint-config-resourge/compare/v1.9.2...v1.9.3) (2026-10-29)
+
+
+### Bug Fixes
+
+* 🐛 release.yml fix ([27b60e5](https://github.com/resourge/eslint-config-resourge/commit/27b60e5cf51763d834f34cf0c59fb5a35d8c5cde))
+
 ## [1.9.2](https://github.com/resourge/eslint-config-resourge/compare/v1.9.1...v1.9.2) (2026-10-29)
 
 
